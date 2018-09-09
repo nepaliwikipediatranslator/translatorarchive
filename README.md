@@ -2,7 +2,7 @@
 #About this translator.
 <img src="http://nepaliwikipediatranslator.googlecode.com/svn/wiki/TranslatorGooglePlayImage.JPG">
 
-= Introduction =
+Introduction 
 
 This project is intended to ease the way people find and replace strings, repeatedly and every time they translate a new article in Wikipedia.
 There might be better tools but since I could not find one that was suitable for Nepali Wikipedia. 
@@ -14,7 +14,7 @@ This was the easiest thing to do, and later saved a lot of time. I built this ap
 
 
 
-= Details =
+Details 
 
 Install the setup file 
 <br>
@@ -33,7 +33,7 @@ If you are not satisfied with the results, just add or remove the rules/ find an
 
 
 
-== Prerequisites ==
+ Prerequisites 
 Download the setup file, and install it. You might need the dotnetframework 4.0 before you could run the application. I guess the installer downloads the framework from microsoft's download website. 
 
 If it does not, get it from here :
