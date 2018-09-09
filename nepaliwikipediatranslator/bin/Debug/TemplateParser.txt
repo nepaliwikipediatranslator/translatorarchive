@@ -1,0 +1,108 @@
+{regex}(\d)*(:)*(\d)*,(\s)*(\d)*( अक्टोबर )(\d)*|(blank)+
+{regex}(\d)*(:)*(\d)*,(\s)*(\d)*( सेप्टेम्बर )(\d)*|(blank)+
+  इतिहास) N |(blank)+
+ इतिहास) N |(blank)+
+ ‎ (Copy template from hi) (च्वे)|(blank)+
+(पागु |(blank)+
+ (पागुTemplate:|(blank)+
+ ‎ (Copy template from en) (च्वे)|(blank)+
+/doc/doc|/doc
+
+
+
+# |(blank)+
+ (सम्पादन गर्ने)|(blank)+
+ढाँचा:|(blank)+
+/doc/doc|/doc
+{regex}(\s)*\((d)*लिंक(हरु)*\)|(blank)+
+{regex} \((d)*(\s)*लिंक(हरु)*\)|(blank)+
+/doc|(blank)+
+  #|(blank)+
+ #|(blank)+
+#|(blank)+
+*|#
+== removing templates == 
+== from recent changes == 
+     |(blank)+
+   |(blank)+
+  |(blank)+
+# Template: |(blank)+
+{regex}(\ )*(\d)*\.(\s)*|(blank)+
+{{|(blank)+
+}}|(blank)+
+{regex} (\d)*\.|(blank)+
+{regex}(\s)*ढाँचा\: न|(blank)+
+{regex}(\d)* ढाँचा\:|(blank)+
+{regex}(\s)*ढाँचा\:|(blank)+
+{regex}ढाँचा\:|(blank)+
+{regex}\((\d)*(\s)*लिंक(हरु)*\)|(blank)+
+{regex}\((\d)*(\s)*लिंक\)|(blank)+
+ * (देखाउने/लुकाउने) |(blank)+
+ ‎ (Copy template from en:)|/doc
+ ‎ (माथि) [पहिलेको रुपमा फर्काउने]|/doc
+ [पहिलेको रुपमा फर्काउने]|(blank)+
+== To get article list from special:contributions == 
+{regex}#(\d)*:(\d)*, (अक्टोबर)*(सेप्टेम्बर)*(अगस्त)* (\d)*, (\d)* \(भिन्न • इतिहास\) न |(blank)+ 
+{regex}#( \(देखाउने\/लुकाउने\) (\d)*:(\d)*, (अक्टोबर)*(सेप्टेम्बर)*(अगस्त)* (\d)*, (\d)* \(भिन्न • इतिहास\) न |(blank)+ 
+{regex}# \(देखाउने\/लुकाउने\) (\d)*:(\d)*, (अक्टोबर)*(सेप्टेम्बर)*(अगस्त)* (\d)*, (\d)* \(भिन्न • इतिहास\) न |(blank)+ 
+{regex}# \(देखाउने\/लुकाउने\) (\d)*:(\d)*, (अक्टोबर)*(सेप्टेम्बर)*(अगस्त)* (\d)*, (\d)* \(भिन्न • इतिहास\) न|(blank)+ 
+{regex}# \(देखाउने\/लुकाउने\) (\d)*:(\d)*, (अक्टोबर)*(सेप्टेम्बर)*(अगस्त)* (\d)*, (\d)* \(भिन्न • इतिहास\)|(blank)+ 
+{regex}# \(देखाउने\/लुकाउने\) (\d)*:(\d)*, (अक्टोबर)*(सेप्टेम्बर)*(अगस्त)*(मे)*(अप्रिल)*(मार्च)* (\d)*, (\d)* \(भिन्न • इतिहास\)|(blank)+ 
+{regex}(\s)+\(नयाँ(\s)+पृष्ठ\:\s(\w)*|(blank)+
+{regex}(\s)\((\d)*\s(स्वापु)(तः)*\)|(blank)+
+Template:|(blank)+
+साँचा:|(blank)+
+{regex}(\s)*\((\d)*\s(कडि)(याँ)*\)|(blank)+
+{regex}(\s)*\((\d)*\s(कडि)(याँ)*\)||(blank)+
+
+
+
+
+# (देखाउने/लुकाउने)|(blank)+
+   |(blank)+
+== from recent changes == 
+     |(blank)+
+   |(blank)+
+  |(blank)+
+  /doc|/doc
+ /doc|/doc
+ ‎/doc|/doc
+{regex}#( \(देखाउने\/लुकाउने\) |blank+
+     |(blank)+
+ ‎ (Copy template from en) (माथि)|/doc
+ (Copy template from en) (माथि)|/doc
+(Copy template from en) (माथि)|/doc
+  (Copy template from en:) (माथि)|/doc
+ (Copy template from en:) (माथि)|/doc
+(Copy template from en:) (माथि)|/doc
+
+== getting from someother  == 
+{regex}\[(\d)*\]| 
+{regex}\n(hinoun)+ |(nenoun)+ 
+
+== convert from * to # == 
+*|#
+
+== getting from recent changes == 
+{regex}\n |
+{regex}\[(\d)*\]| 
+{regex}\n(hinoun)+ |(nenoun)+ 
+
+# |(blank)+
+
+
+    * |(blank)+
+
+
+
+
+
+
+{regex}(\d)* ढाँचा\:|(blank)+
+{regex}ढाँचा\:|(blank)+
+{regex}\((\d)* लिंकहरु\)|(blank)+
+{regex}\((\d)* लिंक\)|(blank)+
+
+{regex}\n |
+{regex}\[(\d)*\]| 
+{regex}\n(hinoun)+ |(nenoun)+ 

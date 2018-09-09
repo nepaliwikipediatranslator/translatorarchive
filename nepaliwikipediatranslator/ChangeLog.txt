@@ -1,0 +1,66 @@
+﻿October 27 2011
+-------------
+Added Bot support
+Added Templates copying from Hindi and Templates copying from English Feature.
+
+Other major features in between will update later
+
+
+
+-------------
+November 07 2010
+Added Features to add Adjectives
+Words can have rules according to rules, I am using  them specially for separating them with nouns and verbs to terminate the sentences.
+-------------
+November 06 2010
+Added Features to add Nouns
+Adding nouns have eased so many puzzling things, Isolating verbs and nouns have made things easier.
+Nouns have a different dimensions and specially the plurals get priorities and are more accurate.
+-------------
+November 05 2010
+Added Features to add Verbs
+Adding verb feature was my long awaited concept. Initially I had a notion like adding dynamic rules.
+I wished to generate rules dynamically during runtime, and on the fly by adding some sort of verb patterns and specifying verbs in a separate file.
+Since I had a lot of patterns but most words used the same patterns and I was tired of typing all the patterns for all the words.
+
+Since the rules file was more cluttered and getting bigger, I wished to separate the rules and put verbs in a separate verb file.
+In this way it would look more clearer and simpler.
+
+
+
+The rule file is still the masters.
+####
+To use a verb, one should define that this line contains a verb: 
+(hiverb)+ति हैं|(neverb)+छ
+(hiverb)+ति है|(neverb)+छ
+(hiverb)+वाते हुए|(neverb)+ाउदा खेरि
+(hiverb)+ता है|(neverb)+न्छ
+
+####
+To use a Noun, one should define that this line contains a Noun: 
+eg: the following line demonstrates how to add a noun rule in the file : hinditonepali.txt
+(hinoun)+ओं|(nenoun)+हरु
+
+####
+besides nouns are placed separately in a file called nounlist.txt
+as: 
+फेसबुक|फेसबुक
+नंबर|नंबर
+नीति|नीति
+शब्द|शब्द
+
+####
+Similarly adjectives are placed in a file called adjectivelist.txt as follows:
+सामने|अगाडी
+जरूरत|जरूरत
+संक्रामक|संक्रामक
+मौजूद|मौजूद
+वर्जित|वर्जित
+देर|अबेर
+संकेतक|संकेतक
+पूरे|पुरा
+
+####
+The rules for adjectives are also kept in the main rule file as follows:
+(hiadjective)+ है|(neadjective)+ छ
+

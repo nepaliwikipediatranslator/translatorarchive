@@ -1,0 +1,8 @@
+#Active device installs as on July 2012.
+== Active device installs as on July 2012 ==
+
+<img src="http://nepaliwikipediatranslator.googlecode.com/svn/wiki/Application%20Status.JPG">
+
+<img src = "http://nepaliwikipediatranslator.googlecode.com/svn/wiki/Active%20device%20installs%20by%20carrier.JPG">
+
+<img src ="http://nepaliwikipediatranslator.googlecode.com/svn/wiki/Active%20device%20installs%20by%20device.JPG">

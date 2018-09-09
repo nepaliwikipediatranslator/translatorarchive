@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7122B08E-60E0-4D2A-8462-CBE6D4BC8820}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NepaliWikiPediaTranslator</RootNamespace>
+    <AssemblyName>NepaliWikiPediaTranslator</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>NepaliWikiPediaTranslator.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AWBot\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AWBot\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AWBot\UrlEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AWBot\UrlEdit.Designer.cs">
+      <DependentUpon>UrlEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AWBPluginWrapper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bots\BackGroundRobot.cs" />
+    <Compile Include="Bots\TemplateCopier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bots\TemplateCopier.Designer.cs">
+      <DependentUpon>TemplateCopier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document.cs" />
+    <Compile Include="FormMainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainWindow.Designer.cs">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainWindowBot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainWindowFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Line.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="NepaliText.cs" />
+    <Compile Include="NepaliTranslatorHelper.cs" />
+    <Compile Include="Open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open.designer.cs">
+      <DependentUpon>Open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paragraph.cs" />
+    <Compile Include="PostProcessor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuleEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RuleEditor.Designer.cs">
+      <DependentUpon>RuleEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBox.Designer.cs">
+      <DependentUpon>SearchBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sentence.cs" />
+    <Compile Include="Bots\UrlEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bots\UrlEditor.Designer.cs">
+      <DependentUpon>UrlEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TranslatorService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SessionsManager.cs" />
+    <Compile Include="Word.cs" />
+    <EmbeddedResource Include="AWBot\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AWBot\UrlEdit.resx">
+      <DependentUpon>UrlEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bots\TemplateCopier.resx">
+      <DependentUpon>TemplateCopier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainWindow.resx">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open.resx">
+      <DependentUpon>Open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RuleEditor.resx">
+      <DependentUpon>RuleEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBox.resx">
+      <DependentUpon>SearchBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bots\UrlEditor.resx">
+      <DependentUpon>UrlEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="MyWebBrowser.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\TranslatorService\NepaliWikiPediaTranslator.TranslatorService.GetTranslationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TranslatorService\NepaliWikiPediaTranslator.TranslatorService.TranslateArrayResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TranslatorService\soap.wsdl" />
+    <None Include="Service References\TranslatorService\soap.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TranslatorService\soap1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TranslatorService\soap2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TranslatorService\soap3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TranslatorService\SoapService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="applicationIcon.ico" />
+    <Content Include="ChangeLog.txt" />
+    <Content Include="Icon.ico" />
+    <Content Include="Readme.txt" />
+    <None Include="Service References\TranslatorService\configuration91.svcinfo" />
+    <None Include="Service References\TranslatorService\configuration.svcinfo" />
+    <None Include="Service References\TranslatorService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="WikiFunctions.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MicrosoftTranslator\MicrosoftTranslator.csproj">
+      <Project>{E7887EB0-79B8-4D0A-85F5-7EEE8349F064}</Project>
+      <Name>MicrosoftTranslator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WikiFunctions\WikiFunctions.csproj">
+      <Project>{B5B0008C-A306-4B0D-B91E-5C03DA7014E0}</Project>
+      <Name>WikiFunctions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\TranslatorService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

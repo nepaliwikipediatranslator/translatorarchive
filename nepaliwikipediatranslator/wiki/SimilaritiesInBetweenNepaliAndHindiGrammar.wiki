@@ -1,0 +1,79 @@
+#summary One-sentence summary of this page.
+#labels Phase-Design,Featured
+Rules to process current sentences
+
+= Introduction =
+
+The subject verb and object agreement in Nepali is : 
+Subject + Object + verb
+
+Ram + rice + eats
+राम + भात + खान्छ 
+
+
+
+While in English it is 
+Subject + verb + object. 
+Ram + eats + rice
+
+Hindi has a similar subject-verb agreement. 
+Subject + object + verb
+राम भात खाता है। 
+
+[although भात is not popularly used in Hindi, it would be correct to use राम खाना खाता है or राम चावल खाता है, it depends upon different regions, where rice is more accurately called चावल. To sum up its an object which has been eaten.) 
+
+
+So to translate the above sentence from Hindi to Nepali, we will just have to translate खाता है to खान्छ 
+
+Here again: खा is the root verb or the stem. Both these languages share the same stem or the root word खा
+Now there are several forms derived from खा .
+
+
+|| *Nepali* || *English* || *Hindi* ||
+|| खा  || eat || खा ||
+|| खानु || to eat || खाना ||
+|| खान्छ || eats || खाता है ||
+|| खायो || ate || खाया ||
+|| खाएको छ || has eaten  || खाया है ||
+|| खाएको थियो || had eaten || खाया था ||
+|| खाएको हुनेछ || will have eaten || खाया हुवा होगा ||
+|| खाने छ || will eat || खाएगा ||
+|| खाइ रहेको छ || is eating || खा रहा है ||
+|| खाइ रहेको थियो || was eating  || खा रहा था ||
+|| खाइ रहेको हुनेछ || will have been eating  || खा रहा रहेगा ||
+|| खाइ रहनेछ ||  will be eating || खाता रहेगा ||
+
+and so on.
+
+So the root verb खा is shared in both. 
+
+we don't even need to translate the root verb. 
+But we just need to find out the prefixes and suffixes to add around the verb to make the sentences correct. 
+
+
+The pattern is similar for other verbs as well .
+Lets try for drinking: पि 
+
+
+|| *Nepali* || *English* || *Hindi* ||
+|| पि  || drink || पि ||
+|| पिउनु || to drink || पिना ||
+|| पिउँछ || drinks || पिता है ||
+|| पियो || ate || पिया ||
+|| पिएको छ || has drunk || पिया है ||
+|| पिएको थियो || had drank || पिया था ||
+|| पिएको हुनेछ || will have drank || पिया हुवा होगा ||
+|| पिउने छ || will drink || पिएगा ||
+|| पिइ रहेको छ || is drinking || पि रहा है ||
+|| पिइ रहेको थियो || was drinking  || पि रहा था ||
+|| पिइ रहेको हुनेछ || will have been drinking  || पि रहा रहेगा ||
+|| पिइ रहनेछ ||  will be drinking || पिता रहेगा ||
+
+I just had to change the root verb and that worked. Even while preparing this document, I used a notepad and did a find and replace and fixed the errors. 
+
+ 
+I know that the Nepali equivalents for English are correct, however I am not sure about Hindi because Hindi is my second language. For instance I am not sure about whether it should be पि Or पी for drinking in Hindi. 
+I am also not sure if this is correct or not for Hindi equivalent of "will have eaten" = "खाया हुवा होगा" 
+
+
+= Details =

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >   
+
+    <TextView
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:text="@string/bannerString"
+        tools:ignore="PxUsage" />
+
+    <EditText
+        android:id="@+id/richTextBox1"
+        android:layout_width="300dp"
+        android:layout_height="123dp"
+        android:inputType="textMultiLine" />
+<LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+   
+   
+    <Button
+        android:id="@+id/btnTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="btnTranslate_Click"
+        android:text="@string/Translate" />
+    
+    <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="18dip"
+            android:layout_height="18dip"
+            android:layout_marginLeft="10dip"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progress_spin"
+            android:indeterminateDuration="3500"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+	</LinearLayout>
+	
+    <EditText
+        android:id="@+id/richTextBox2"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:inputType="textMultiLine" >
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

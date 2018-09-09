@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Action Settings</string>
+    <string name="app_name">Nepali Translator</string>
+    <string name="Translate">Translate</string>
+    <string name="bannerString">Type or paste in Hindi in the text below, and then press the translate button to translate in Nepali</string>
+
+</resources>

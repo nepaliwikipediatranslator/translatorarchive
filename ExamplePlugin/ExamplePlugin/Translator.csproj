@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7122B08E-60E0-4D2A-8462-CBE6D4BC8820}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WikiPediaTranslator</RootNamespace>
+    <AssemblyName>Translator</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetWikiBot, Version=2.96.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\DotNetWikiBot.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bots\BotScript.cs" />
+    <Compile Include="Bots\BotWatcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bots\BotWatcher.Designer.cs">
+      <DependentUpon>BotWatcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bots\ClientLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bots\ClientLogin.Designer.cs">
+      <DependentUpon>ClientLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Close.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Close.designer.cs">
+      <DependentUpon>Close.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteBrowsingHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteBrowsingHistory.designer.cs">
+      <DependentUpon>DeleteBrowsingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document.cs" />
+    <Compile Include="DotNetWikiBot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FormMainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainWindow.Designer.cs">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainWindowFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InternetOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InternetOption.designer.cs">
+      <DependentUpon>InternetOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPostProcessor.cs" />
+    <Compile Include="IsDependentVowel.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="NepaliText.cs" />
+    <Compile Include="Open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open.designer.cs">
+      <DependentUpon>Open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paragraph.cs" />
+    <Compile Include="PostProcessor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuleEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RuleEditor.Designer.cs">
+      <DependentUpon>RuleEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBox.Designer.cs">
+      <DependentUpon>SearchBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sentence.cs" />
+    <Compile Include="Bots\UrlEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bots\UrlEditor.Designer.cs">
+      <DependentUpon>UrlEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bots\WBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bots\WBrowser.Designer.cs">
+      <DependentUpon>WBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Word.cs" />
+    <EmbeddedResource Include="Bots\BotWatcher.resx">
+      <DependentUpon>BotWatcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bots\ClientLogin.resx">
+      <DependentUpon>ClientLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Close.resx">
+      <DependentUpon>Close.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteBrowsingHistory.resx">
+      <DependentUpon>DeleteBrowsingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainWindow.resx">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternetOption.resx">
+      <DependentUpon>InternetOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open.resx">
+      <DependentUpon>Open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RuleEditor.resx">
+      <DependentUpon>RuleEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBox.resx">
+      <DependentUpon>SearchBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bots\UrlEditor.resx">
+      <DependentUpon>UrlEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bots\WBrowser.resx">
+      <DependentUpon>WBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="BotInfo.netmodule" />
+    <None Include="MyWebBrowser.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="applicationIcon.ico" />
+    <Content Include="ChangeLog.txt" />
+    <Content Include="DotNetWikiBot.dll" />
+    <Content Include="DotNetWikiBot.i18n.xml" />
+    <Content Include="Icon.ico" />
+    <Content Include="Icons\1240493661_tab_remove.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1240499713_mime_html.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1240501439_favorites.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1240504514_favorites.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1240666872_text-html.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1240666912_text-html.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1240666976_text-html.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1240667853_gohome.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1240667977_folder.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1240668417_folder_open_16x16.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1241108291_bookmarks_list_add.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1241952611_folder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1242045577_plus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1242927470_onebit_01.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1242928690_home.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\1242929688_icon_history.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\424px-Blue_folder_seth_yastrov_01_svg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\arrow_refresh.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\back.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\bookmark_add-256.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\button_cancel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Fav-star-256.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\fav128.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Favorite_128.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Favorite_64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Folder Remote.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Folder Web.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Folder.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Folder2.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Folder3.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Folderblue.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Folder_Web.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\forward.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Google.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Search.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="WikiFunctions\WikiFunctions.csproj">
+      <Project>{B5B0008C-A306-4B0D-B91E-5C03DA7014E0}</Project>
+      <Name>WikiFunctions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

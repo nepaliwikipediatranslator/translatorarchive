@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C4FC719-7B6E-451A-B954-937EE37CB891}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExamplePlugin</RootNamespace>
+    <AssemblyName>ExamplePlugin</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetWikiBot, Version=2.96.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bots\BotScript.cs" />
+    <Compile Include="Bots\BotWatcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bots\BotWatcher.Designer.cs">
+      <DependentUpon>BotWatcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bots\ClientLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bots\ClientLogin.Designer.cs">
+      <DependentUpon>ClientLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bots\UrlEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bots\UrlEditor.Designer.cs">
+      <DependentUpon>UrlEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bots\WBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bots\WBrowser.Designer.cs">
+      <DependentUpon>WBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Close.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Close.designer.cs">
+      <DependentUpon>Close.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteBrowsingHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteBrowsingHistory.designer.cs">
+      <DependentUpon>DeleteBrowsingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document.cs" />
+    <Compile Include="DotNetWikiBot.cs" />
+    <Compile Include="FormMainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainWindow.designer.cs">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainWindowFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InternetOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InternetOption.designer.cs">
+      <DependentUpon>InternetOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPostProcessor.cs" />
+    <Compile Include="IsDependentVowel.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="NepaliText.cs" />
+    <Compile Include="Open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open.designer.cs">
+      <DependentUpon>Open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paragraph.cs" />
+    <Compile Include="PostProcessor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuleEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RuleEditor.designer.cs">
+      <DependentUpon>RuleEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBox.designer.cs">
+      <DependentUpon>SearchBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sentence.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="TranslatorExamplePlugin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Word.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RuleEditor.resx">
+      <DependentUpon>RuleEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBox.resx">
+      <DependentUpon>SearchBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="adjectivelist.txt" />
+    <EmbeddedResource Include="Bots\BotWatcher.resx">
+      <DependentUpon>BotWatcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bots\ClientLogin.resx">
+      <DependentUpon>ClientLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bots\UrlEditor.resx">
+      <DependentUpon>UrlEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bots\WBrowser.resx">
+      <DependentUpon>WBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Close.resx">
+      <DependentUpon>Close.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteBrowsingHistory.resx">
+      <DependentUpon>DeleteBrowsingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainWindow.resx">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HindiToNepali.txt" />
+    <EmbeddedResource Include="InternetOption.resx">
+      <DependentUpon>InternetOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nounlist.txt" />
+    <EmbeddedResource Include="Open.resx">
+      <DependentUpon>Open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pronounlist.txt" />
+    <EmbeddedResource Include="verblist.txt" />
+    <EmbeddedResource Include="wordList.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DotNetWikiBot.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DotNetWikiBot.i18n.xml" />
+    <Content Include="Icon.ico" />
+    <Content Include="Readme.txt" />
+    <Content Include="Translator.csproj" />
+    <Content Include="Translator.csproj.user" />
+    <Content Include="Translator.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BotInfo.netmodule" />
+    <None Include="LocalTestRun.testrunconfig" />
+    <None Include="MyWebBrowser.snk" />
+    <None Include="Translator.suo" />
+    <None Include="Translator.vsmdi" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\projects\project from svn\AWB\AWB\WikiFunctions\WikiFunctions.csproj">
+      <Project>{B5B0008C-A306-4B0D-B91E-5C03DA7014E0}</Project>
+      <Name>WikiFunctions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
